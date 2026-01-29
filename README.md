@@ -1,4 +1,4 @@
-# Challenge 1 — ARM Calling Convention & Naked Functions (Cortex-M4)
+# Challenge 1  ARM Calling Convention & Naked Functions (Cortex-M4)
 
 ## 1. Goal of this Lab
 
@@ -31,7 +31,7 @@ This wrapper:
 
 ---
 
-## 3. ARM Calling Convention (AAPCS) — in simple words
+## 3. ARM Calling Convention (AAPCS)in simple words
 
 AAPCS defines **rules** so functions can safely call each other.
 
@@ -57,14 +57,14 @@ Means:
 
 ---
 
-## 4. What is a Naked Function (and why we use it)
+## 4. What is a Naked Function
 
 A **naked function** is a function where:
 
-* ❌ No `push`
-* ❌ No `pop`
-* ❌ No stack setup
-* ❌ No automatic return
+*  No `push`
+*  No `pop`
+*  No stack setup
+*  No automatic return
 
 The compiler generates **nothing** except the code we write.
 
@@ -84,7 +84,7 @@ bx lr
 
 ---
 
-## 5. Registers and Stack — what we learned
+## 5.  what we learned :Registers and Stack 
 
 ### Stack Pointer (SP)
 
@@ -106,7 +106,7 @@ bx lr
   * Local variables
   * Return address
 
-➡️ In a naked function, **there is no stack frame unless we create one ourselves**.
+ In a naked function, **there is no stack frame unless we create one ourselves**.
 
 ---
 
